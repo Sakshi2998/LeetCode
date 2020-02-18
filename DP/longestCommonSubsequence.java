@@ -1,6 +1,6 @@
 package DP;
 
-class LongestCommonSubstring {
+class longestCommonSubsequence {
 
 	public int longestCommonSubsequence(String str1, String str2) {
 
