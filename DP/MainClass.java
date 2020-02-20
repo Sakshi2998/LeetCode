@@ -1,10 +1,10 @@
-package DP;
+package dp;
 
 public class MainClass {
 
 	public static void main(String[] args) {
 
-		LongestCommonSubstring lcs = new LongestCommonSubstring();
+		longestCommonSubsequence lcs = new longestCommonSubsequence();
 		
 		System.out.println(lcs.longestCommonSubsequence("AGGTAB", "GXTXAYB"));
 		
