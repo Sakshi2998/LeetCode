@@ -2,7 +2,7 @@ package dp;
 
 class longestCommonSubsequence {
 
-	public int longestCommonSubsequence(String str1, String str2) {
+	public int lcs(String str1, String str2) {
 
 
 		char[] s1 = str1.toCharArray();

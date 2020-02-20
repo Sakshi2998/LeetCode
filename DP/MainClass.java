@@ -6,7 +6,7 @@ public class MainClass {
 
 		longestCommonSubsequence lcs = new longestCommonSubsequence();
 		
-		System.out.println(lcs.longestCommonSubsequence("AGGTAB", "GXTXAYB"));
+		System.out.println(lcs.lcs("AGGTAB", "GXTXAYB"));
 		
 		
 	}
