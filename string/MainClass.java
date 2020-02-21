@@ -5,7 +5,7 @@ public class MainClass {
 	public static void main(String[] args) {
 
 		StringToInteger sti = new StringToInteger();
-		System.out.println(sti.myAtoi("  -42"));
+	
 	}
 
 }
