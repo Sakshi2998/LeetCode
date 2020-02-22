@@ -9,8 +9,8 @@ public class Mainclass {
 		head.left=new TreeNode(2);
 		head.right= new TreeNode(3);
 		
-		PreorderIterative pit = new PreorderIterative();
-		System.out.println(pit.preorderTraversal(head));
+		InorderIterative pit = new InorderIterative();
+		System.out.println(pit.inorderTraversal(head));
 		
 	}
 
