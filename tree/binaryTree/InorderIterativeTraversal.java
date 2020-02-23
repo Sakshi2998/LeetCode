@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-public class InorderIterative {
+public class InorderIterativeTraversal {
 	public List<Integer> inorderTraversal(TreeNode root) {
 
 		Stack<TreeNode> stack = new Stack<>();

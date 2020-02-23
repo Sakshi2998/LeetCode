@@ -6,12 +6,16 @@ public class Mainclass {
 		// TODO Auto-generated method stub
 		
 		TreeNode head = new TreeNode(1);
-		head.left=null;
-		head.right= new TreeNode(2);
-		head.right.left =new TreeNode(3);
 		
-		PostorderIterative pit = new PostorderIterative();
-		System.out.println(pit.postorderTraversal(head));
+		head.left= new TreeNode(2);
+		head.right =new TreeNode(3);
+		head.left.right =new TreeNode(4);
+		head.left.left =new TreeNode(5);
+
+
+		
+		LevelOrderTraversal pit = new LevelOrderTraversal();
+		System.out.println(pit.levelOrder(head));
 		
 	}
 

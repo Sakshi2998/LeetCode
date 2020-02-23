@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-public class PostorderIterative {
+public class PostorderIterativeTraversal {
 	public List<Integer> postorderTraversal(TreeNode root) {
 
 		List<Integer> traversal = new ArrayList<Integer>();
