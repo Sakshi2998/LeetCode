@@ -11,13 +11,14 @@ public class MainClass {
 		head.next.next.next = new ListNode(3);
 
 		head = snp.swapPairs(head);
-		
-		while(head!=null) {
-			System.out.println(head.val+" -> ");
-			head=head.next;
+
+		while (head != null) {
+			System.out.print(head.val + " -> ");
+
+			head = head.next;
 		}
-		
-		
+		System.out.print("null");
+
 	}
 
 }
