@@ -1,7 +1,5 @@
 package dp;
 
-import java.util.Arrays;
-
 public class ClimbingStairsIterative{
 	public int climbStairs(int n) {
 	    
