@@ -1,23 +1,25 @@
 package DP;
 
 public class DivisorGame {
-	public boolean divisorGame(int n) {
-		return n%2==0;
-	}
-
 //	public boolean divisorGame(int n) {
-//		boolean memo[] = new boolean[n+1];
-//		memo[0]= true;
-//		memo[1]= false;
-//		for(int i=2 ;i<=n;i++) {
-//			for(int j=1;j<Math.sqrt(i);j++) {
-//				if(j%i==0) {
-//					memo[i]=memo[i] && !memo[i-j];
-//				}
-//			}
-//		}
-//		
-//		
-//		return memo[n];
+//		return n%2==0;
 //	}
+	
+	
+	 public boolean divisorGame(int n) {
+			boolean memo[] = new boolean[n+1];
+			memo[0]= true;
+			memo[1]= false;
+			for(int i=2 ;i<=n;i++) {
+				for(int j=1;j<Math.sqrt(i);j++) {
+					if(i%j==0) {
+						memo[i]=memo[i] || !memo[i-j];
+					}
+				}
+			}
+			
+			
+			return memo[n];
+		}
 }
+
