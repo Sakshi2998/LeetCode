@@ -4,8 +4,9 @@ public class MainClass {
 
 	public static void main(String[] args) {
 		
-		UniquePaths up = new UniquePaths();
-		System.out.println(up.uniquePaths(3, 2));
+		UniquePathsII up = new UniquePathsII();
+		int[][] og = {{0}};
+		System.out.println(up.uniquePathsWithObstacles(og));
 	}
 
 }
