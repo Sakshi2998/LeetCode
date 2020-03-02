@@ -14,7 +14,7 @@ public class LetterCombinationsOfaPhoneNumber {
 	
 	public List<String> letterCombinations(String digits) {
 		if(digits.isEmpty())
-			return null;
+			return new ArrayList<String>();
 		
 		map.put(2, Arrays.asList('a','b','c'));
 		map.put(3, Arrays.asList('d','e','f'));
