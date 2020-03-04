@@ -13,7 +13,7 @@ class JumpGame {
 
 		return lastGood == 0;
 	}
-
+}
 //	Using DP => O(n2)
 
 //     boolean canJump(int[] nums) {
@@ -45,4 +45,3 @@ class JumpGame {
 //		}
 //		return res;
 //	}
-}
