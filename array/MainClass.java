@@ -3,8 +3,8 @@ package array;
 public class MainClass {
 
 	public static void main(String[] args) {
-		JumpGame jg = new JumpGame();
-		System.out.println(jg.canJump(new int[] {3,2,1,0,4}));
+		SortColors sc = new SortColors();
+		sc.sortColors(new int[] {2,0,2,1,1,0});
 	}
 
 }
