@@ -4,26 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-class TreeNode<T> {
-	T val;
-	TreeNode left;
-	TreeNode right;
+public class PostorderIterativeTraversal {
+	public List<Integer> postorderTraversal(TreeNode root) {
 
-	TreeNode(T x) {
-		val = x;
-	}
-
-	@Override
-	public String toString() {
-		return val + "";
-	}
-
-}
-
-public class GenericPostorderIterativeTraversal {
-	public <T> List<T> postorderTraversal(TreeNode<T> root) {
-
-		List<T> traversal = new ArrayList<>();
+		List<Integer> traversal = new ArrayList<Integer>();
 		Stack<TreeNode> stack = new Stack<TreeNode>();
 		TreeNode temp = new TreeNode(-1);
 
@@ -34,7 +18,7 @@ public class GenericPostorderIterativeTraversal {
 					// right visited or right not present
 					temp = stack.pop();
 					System.out.println(temp.val);
-					traversal.add((T) temp.val);
+					traversal.add(temp.val);
 					root = null;
 
 				} else {
@@ -53,7 +37,7 @@ public class GenericPostorderIterativeTraversal {
 				root = root.left;
 			}
 		}
-
+		
 		return traversal;
 
 	}
